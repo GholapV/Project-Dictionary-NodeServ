@@ -10,8 +10,8 @@ async function Controller(req, res) {
         path: `/api/v2/entries/en-gb/${wordId}?fields=definitions%2Cexamples%2Cetymologies&strictMatch=false`,
         method: "GET",
         headers: {
-            'app_id': "2b6fef90",
-            'app_key': "80a549758ebb93623c22274df21bac72"
+            'app_id': "<YourAppId>",
+            'app_key': "<YourAppKey>"
         }
     };
     await https.get(options, async (resp) => {
